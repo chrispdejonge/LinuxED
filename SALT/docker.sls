@@ -1,4 +1,6 @@
-docker:
-  cmd.run:
-    - name: | 
-                sudo git clone https://github.com/chrispdejonge/LinuxED && cd LinuxED && sudo chmod +x docker.sh && ./docker.sh
+docker installation:
+ cmd.run:
+   - name: |
+        sudo apt install docker.io -y
+        sudo systemctl start docker
+        sudo systemctl enable docker
